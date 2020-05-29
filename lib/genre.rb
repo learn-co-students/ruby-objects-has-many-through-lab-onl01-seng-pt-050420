@@ -13,6 +13,7 @@ class Genre
     Song.all
   end
 
+  # has many artists, through songs
   def artists
     songs.map { |song| song.artist }
   end
