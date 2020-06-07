@@ -24,7 +24,7 @@ class Artist
     Song.new(name, self, genre)
   end
 
-  has many genres, through songs
+  # has many genres, through songs
   def genres
     songs.map { |song| song.genre }
   end
