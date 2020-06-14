@@ -38,7 +38,7 @@ describe 'Doctor' do
       expect(appointment.doctor).to eq(doctor_who)
     end
   end
-=begin
+
   describe '#patients' do
     it 'has many patients, through appointments' do
       doctor_who = Doctor.new('The Doctor')
@@ -48,5 +48,5 @@ describe 'Doctor' do
       expect(doctor_who.patients).to include(hevydevy)
     end
   end
-=end
+
 end

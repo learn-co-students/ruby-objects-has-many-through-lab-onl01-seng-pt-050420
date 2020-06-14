@@ -27,7 +27,7 @@ describe 'Patient' do
       expect(Patient.all).to include(good)
     end
   end
-=begin
+
   describe '#appointments' do
     it 'returns all appointments associated with this Patient' do
       doctor_who = Doctor.new('The Doctor')
@@ -44,7 +44,7 @@ describe 'Patient' do
       expect(mike.appointments).to include(appointment_3)
     end
   end
-=end
+
   describe '#doctors' do
     it 'has many doctors through appointments' do
       doctor_who = Doctor.new('The Doctor')
