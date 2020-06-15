@@ -1,5 +1,7 @@
+
 class Song
-  attr_accessor :name, :artist, :genre
+  attr_reader :artist, :genre
+  attr_accessor :name
 
   @@all = []
 
@@ -15,7 +17,6 @@ class Song
   end
 
   def say_hi
-    puts "hi"
+    puts 'hi'
   end
-
 end
