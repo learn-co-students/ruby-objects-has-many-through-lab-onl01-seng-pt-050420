@@ -1,4 +1,5 @@
 require "spec_helper"
+require 'pry'
 
 
 describe "Artist" do
@@ -15,7 +16,7 @@ describe "Artist" do
     it "knows about all artist instances" do
       jay_z = Artist.new("Jay-Z")
       kendrick = Artist.new("Kendrick Lamar")
-
+  
       expect(Artist.all).to include(jay_z)
       expect(Artist.all).to include(kendrick)
     end
